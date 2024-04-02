@@ -1,0 +1,146 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: poppins;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background: url(https://i.makeagif.com/media/1-20-2017/Dcv7Ly.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ;
+            backdrop-filter: saturate(1.5);
+        }
+
+        .box {
+
+            height: 60vh;
+            width: 310px;
+            background: rgba(255, 255, 255, 0.366);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.443);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            padding: 10px;
+            border: solid 1px rgba(255, 255, 255, 0.765);
+        }
+
+        .windDetails img {
+            max-height: 2.8rem;
+            margin-right: 0.5rem;
+        }
+
+        .windDetails {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        input {
+            width: 80%;
+            height: 2rem;
+            outline: none;
+            font-size: 0.8rem;
+            color: #272626;
+            padding: 0.2rem 0.5rem;
+            border-radius: 1.5rem;
+            border: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.222);
+            backdrop-filter: blur(6px);
+            margin: 6px 2px 0 6px;
+            transition: all ease-in-out 0.2s;
+            background: rgba(255, 255, 255, 0.366);
+            border: solid 1px rgba(255, 255, 255, 0.765);
+        }
+
+        input:focus {
+            border: 1px solid #9c9dde;
+        }
+
+        button {
+            background: rgba(255, 255, 255, 0.366);
+            backdrop-filter: blur(6px);
+            border: solid 1px rgba(255, 255, 255, 0.765);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.222);
+            width: 2.2rem;
+            height: 2rem;
+            cursor: pointer;
+            color: #4f4e4e;
+            border-radius: 50%;
+            margin-left: 0.12rem;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            color: #fff;
+            border: none;
+            background-color: #444446;
+        }
+
+        .weatherIcon img {
+
+            width: 8rem;
+            filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.4));
+            margin-top: 8px;
+            transition: img ease-in-out 0.3s;
+
+        }
+
+        .weatherIcon {
+            width: 8rem;
+        }
+
+        .temp {
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .weather {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .humidityBox ,.windSpeed{
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            font-size: 14px;
+            margin-top: 14px;
+            
+        }
+        .cityDetails{
+           position: relative;
+           bottom: 8px;
+        }
+        @media screen and  (max-height:626px){
+         .content{
+          flex-direction: row;
+          gap: 10px;
+        margin-top: 6px;
+        
+           }
+           .box{
+            height: auto;
+           }
+        }
+   
